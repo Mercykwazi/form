@@ -29,34 +29,65 @@
             
  
 </script>
-<body>
-    <table>
-    <table id ="hey">
-        <tr>
-            <td>Name</td>
-            <td><span id="name"></span></td>
-        </tr>
-        <tr>
-            <td>Lastname</td>
-            <td><span id="lastname"></span></td>
-        </tr>
-        <tr>
-            <td>Contact Number</td>
-            <td><span id="contact-no"></span></td>
-        </tr>
-        <tr>
-            <td>Email</td>
-            <td><span id="email"></span></td>
-        </tr>
-        <tr>
-            <td>Dietary requirements</td>
-            <td><span id="dietary"></span></td>
-        </tr>
-        <tr>
-            <td>Number of Guests</td>
-            <td><span id="guests"></span></td>
-        </tr>
-    </table>
+ <style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size:23px; 
+}
+
+td, th {
+    border: 8px solid burlywood;
+    text-align: center;
+    padding: 10px;
+}
+img{
+    padding-right:100%;
+}
+.thing{
+    font-family:sans-serif;
+    font-size:55px;  
+}
+
+</style>
+    <body>
+
+
+<div class="bg"></div>
+
+
+
+<button onclick="myFunction()">click this button to see you inputs</button>
+<table id ="hey">
+  <tr>
+    <th>In this area on the form</th>
+    <th>Your input was</th>
+    
+  </tr>
+   <tr>
+    <td>Name</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>last name</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Contact</td>
+    <td></td>
+</tr>
+ <tr>
+    <td>email</td>
+    <td></td>
+</tr>
+ <tr>
+    <td>dietory-requirements</td>
+    <td></td>
+  </tr>
+</table>
+ 
+</table>
 
 <script>
 function myFunction() {
@@ -72,5 +103,8 @@ function myFunction() {
     x[1].innerHTML = dietory;
 }
 </script>
-</body>
-</html>
+
+
+    </body>
+
+    </html>

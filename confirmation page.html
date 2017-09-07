@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <p id="it">thank you for your confamation:  </p>
+      <script>
+            var url = window.location.search;
+            var urlSplitted = location.search.slice(1).split("&");
+            var str = "thank you for your responce:";
+
+            for (var i = 0; i < urlSplitted.length; i++) {
+                console.log(urlSplitted[i]);
+            }
+            
+            var firstname = urlSplitted[0].split("=")[1];
+            var lastname = urlSplitted[1].split("=")[1];
+            var contacts = urlSplitted[2].split("=")[1];
+            var email = urlSplitted[3].split("=")[1];
+            var dietory = urlSplitted[4].split("=")[1];
+              var fname = firstname;        
+                      
+
+            document.getElementById("it").innerHTML = str +  firstname + " " + lastname;
+            
+               
+            
+ 
+</script>
+<body>
+    <table>
+    <table id ="hey">
+        <tr>
+            <td>Name</td>
+            <td><span id="name"></span></td>
+        </tr>
+        <tr>
+            <td>Lastname</td>
+            <td><span id="lastname"></span></td>
+        </tr>
+        <tr>
+            <td>Contact Number</td>
+            <td><span id="contact-no"></span></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><span id="email"></span></td>
+        </tr>
+        <tr>
+            <td>Dietary requirements</td>
+            <td><span id="dietary"></span></td>
+        </tr>
+        <tr>
+            <td>Number of Guests</td>
+            <td><span id="guests"></span></td>
+        </tr>
+    </table>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("hey").rows[1].cells;
+    x[1].innerHTML = firstname;
+    var x = document.getElementById("hey").rows[2].cells;
+    x[1].innerHTML = lastname;
+    var x = document.getElementById("hey").rows[3].cells;
+    x[1].innerHTML = contacts;
+    var x = document.getElementById("hey").rows[4].cells;
+    x[1].innerHTML = email;
+    var x = document.getElementById("hey").rows[5].cells;
+    x[1].innerHTML = dietory;
+}
+</script>
+</body>
+</html>
